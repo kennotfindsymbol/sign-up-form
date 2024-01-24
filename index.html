@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <div class="banner">
+            <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="The Odin Project">
+            ODIN
+        </div>
+        <footer>
+            Photo by 
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Hailey West</a> on <a href="https://unsplash.com/">Unsplash</a>
+        </footer>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p>
+                This is not a real online service! You know yo uneed something like this in your life this in your life to help you realize your deepest dreams. Sign up <span>now</span> to get started.
+            </p>
+            <p>You <span>know</span> you want to.</p>
+        </div>
+
+        <div>
+            <form action=""> 
+                <ul>
+                    <li>
+                        <h3 id="letsdothis">Let's do this!</h3>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <input type="text" id="firstname" placeholder="" minlength="1" required>                    
+                    </li>
+                    <li class="even"> 
+                        <div>
+                            <label for="lastname">Last Name</label>
+                        </div>
+                        <input type="text" id="lastname" placeholder="" minlength="1" required>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <input type="email" id="email" placeholder="" required>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="phonenumber">Phone Number</label>
+                        </div>
+                        <input type="tel" id="phonenumber" placeholder="" pattern="^\d{8}$" title="Please enter a valid phone number"  required>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="password">Password</label>
+                        </div>
+                        <input type="password" id="password" placeholder="" minlength="8" required>
+                    </li>
+                    <li>
+                        <div>
+                            <label for="confirmpassword">Confirm Password</label>
+                        </div>
+                        <input type="password" id="confirmpassword" placeholder="" minlength="8" required>
+                    </li>  
+                </ul>
+                <div class="btn">
+                    <button type="submit">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="login">
+            Already have an account? <a href="#">Log in</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
