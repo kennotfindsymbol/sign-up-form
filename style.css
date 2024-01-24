@@ -1,0 +1,151 @@
+@font-face {
+    font-family:Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0 150px;
+    background-color: #000;
+    font-family: roboto, system-ui;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    margin: 200px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 5rem;
+    font-family: norse-bold;
+    gap: 8px;
+}
+
+a {
+    color: inherit;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #d1d1d1;
+    font-size: 0.7rem;
+}
+
+#logo {
+    height: 100%;
+}
+
+.right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top {
+    padding-left: 40px;
+    padding-right: 160px;
+    margin-bottom: 40px;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 24px;
+}
+
+p span {
+    font-style: oblique;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 50px;
+    padding-left: 40px;
+    padding-right: 160px;
+    list-style: none;
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgb(204, 204, 204);
+}
+
+
+li:has(h3) {
+    width: 100%;
+}
+
+li {
+    width: 40%;
+}
+
+li label {
+    font-size: 0.8rem;
+}
+
+input {
+    outline: none;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+input:focus {
+    border-color: skyblue;
+    
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+button {
+    background-color: #596D48;
+    color: #f7f7f7;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 14px 36px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 1px 0px 3px #a1ad96;
+    margin: 20px 40px;
+}
+
+.login {
+    padding-left: 40px;
+    font-weight: 500;
+}
+
+.login a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: 1000;
+}
